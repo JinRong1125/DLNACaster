@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <WebView
+        android:id="@+id/youtubeWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/startRenderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        app:backgroundTint="@color/gray"
+        app:srcCompat="@drawable/icon_cast" />
+
+    <ImageView
+        android:id="@+id/renderingLayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_dlna"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/panelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/positionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/durationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:id="@+id/replayButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toStartOf="@+id/playPauseButton"
+                android:background="@drawable/icon_replay"/>
+
+            <ImageButton
+                android:id="@+id/playPauseButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_pause"/>
+
+            <ImageButton
+                android:id="@+id/stopButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/playPauseButton"
+                android:background="@drawable/icon_stop"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

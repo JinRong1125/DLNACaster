@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DLNACaster</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="button_dlna">DLNA</string>
+    <string name="tab_cast">Cast</string>
+    <string name="tab_youtube">Youtube</string>
+
+    <string name="active_devices">Active Devices</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="choose_device">Please choose a renderer device.</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="connect_failed">Connect failed.</string>
+    <string name="connection_timed_out">Connection timed out.</string>
+
+    <string name="cast_started">Cast started.</string>
+    <string name="cast_stopped">Cast stopped.</string>
+    <string name="casting">Casting&#8230;</string>
+
+    <string name="media_not_found">Media not found.</string>
+    <string name="render_started">Render started.</string>
+    <string name="render_stopped">Render stopped.</string>
+    <string name="rendering">Rendering&#8230;</string>
+
+    <string name="replay">Replay</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+
+</resources>
